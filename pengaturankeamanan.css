@@ -1,0 +1,56 @@
+/* Contoh pengaturan_keamanan.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.form-keamanan{
+    border-radius: 2%;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #141122;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #141122;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #141122;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+}

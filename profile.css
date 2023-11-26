@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.kotak-1,
+.kotak-2 {
+    border-radius: 2%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.kotak-1 {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-2 {
+    background-color: #141122;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.user-info1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-right: 120px;
+}
+
+.user-details {
+    margin-left: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.user-details h2 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.user-details p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.additional-box {
+    border-radius: 6px;
+    border: 1px solid #9e9e9e;
+    width: 140%; /* Ubah menjadi 100% agar responsif */
+    height: 90%;
+    margin: 10px;
+}
+
+.additional-box hr {
+    border: none;
+    background-color: #9e9e9e;
+    height: 1px;
+    width: 100%;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #141122;
+}
+
+.pengaturan {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.keterangan-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keterangan {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-profil-right {
+    margin-left: auto;
+}
+
+
+.logo-profil {
+    display: flex;
+    align-items: center;
+}
+
+.lprofil {
+    width: 30px;
+    height: 30px;
+}
+
+.lprofil1 {
+    width: 18px;
+    height: 28px;
+}
+
+.keterangan a {
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+/* Media queries untuk membuat desain responsif */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kotak-1,
+    .kotak-2 {
+        width: 80%; /* Sesuaikan dengan lebar yang diinginkan */
+        margin: 10px;
+    }
+}

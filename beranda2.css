@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.kotak-1,
+.kotak-2 {
+    border-radius: 3%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.kotak-1 {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-2 {
+    background-color: #141122;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.logo1 {
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo1 .saldo {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.button1 {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.button1 .button {
+    border-radius: 8px;
+    border: 1px #141112 solid;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+.button1 .button:hover {
+    background-color: #141122;
+    color: #fff;
+}
+
+h2 {
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kotak-1,
+    .kotak-2 {
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .text1 {
+        margin-bottom: 50px;
+    }
+
+    .logo1 {
+        margin-bottom: 50px;
+    }
+
+    .logo1 .saldo {
+        font-size: 30px;
+    }
+
+    .button1 {
+        flex-direction: column;
+    }
+
+    .button1 .button {
+        width: 80px;
+        height: 30px;
+        margin: 10px;
+    }
+
+    h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+}

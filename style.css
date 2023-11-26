@@ -1,0 +1,162 @@
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    /*background-color: #f3f3f3;*/
+}
+
+.left img {
+    width: 100%; /* Setel lebar gambar agar sesuai dengan div */
+    height: 100%; /* Setel tinggi gambar agar sesuai dengan div */
+    object-fit: cover; /* Atur gambar agar sesuai dengan div tanpa mengubah aspek rasio */
+}
+
+.left h1 {
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 55px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #141122;
+}
+
+.judul {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+label {
+    justify-self: start;
+    font-size: 14px;
+    font-weight: bold;
+    color: #141122;
+}
+
+input[type="tel"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #141122;
+    padding: 5px;
+    width: 300px;
+    color: #141122;
+    font-size: 20px;
+}
+
+input[type="tel"] {
+    background-image: url(Img/User.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 25px 25px;
+    padding-right: 30px;
+}
+
+input[type="password"] {
+    background-image: url(Img/key.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 25px 25px;
+    padding-right: 30px;
+}
+
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+
+.form-group:nth-child(3) label {
+    margin-top: 50px;
+}
+
+.button {
+    margin-top: 70px;
+    padding: 10px 20px;
+    width: 170px;
+    background-color: #141122;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.text {
+    font-weight: bold;
+    margin-top: 70px;
+    color: #7a7a7a;
+}
+
+a {
+    text-decoration: none;
+    color: #141122;
+}
+
+/* Tambahkan media queries untuk perangkat dengan lebar layar maksimum 600px */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .judul {
+        font-size: 6vw;
+    }
+
+    label {
+        font-size: 4vw;
+    }
+
+    input[type="tel"],
+    input[type="password"] {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .button {
+        width: 70%;
+        border-radius: 8vw;
+    }
+
+    .text {
+        margin-top: 12vh;
+    }
+}

@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+.container {
+	display: flex;
+}
+
+.kiri {
+	background: #d8d8d8;
+	width: 240px;
+	height: 768px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.kanan {
+	position: absolute; /* Tambahkan properti position: absolute di sini */
+	top: 90px; /* Sesuaikan top sesuai kebutuhan Anda */
+	left: 250px; /* Sesuaikan left sesuai kebutuhan Anda */
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.user-details {
+	margin-left: 10px;
+}
+
+.logo-container beranda-logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+}
+
+.user-details h2 {
+	font-size: 12px;
+	margin: 0;
+}
+
+.user-details p {
+	font-weight: bold;
+	font-size: 10px;
+	margin: 0;
+}
+
+.underline {
+	position: absolute;
+	border: 1px;
+	border-top: 1px solid #9e9e9e;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.icons {
+	margin-top: 15px;
+	padding: 20px;
+}
+
+.icon-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 50px 0;
+	/*background-color: blue;*/
+}
+
+.icon-item img {
+	margin-right: 10px;
+	height: 30px;
+	width: 30px;
+}
+
+.icon-item p {
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+	color: #141122;
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	/*display: inline;
+	vertical-align: middle;*/
+}
+
+.icon-item a {
+	text-decoration: none;
+}

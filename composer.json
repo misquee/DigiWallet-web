@@ -1,0 +1,6 @@
+{
+    "require": {
+        "picqer/php-barcode-generator": "^2.4",
+        "khanamiryan/qrcode-detector-decoder": "^2.0"
+    }
+}

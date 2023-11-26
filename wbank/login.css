@@ -1,0 +1,152 @@
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center styles */
+.center {
+  text-align: center;
+  margin-top: -25vh;
+}
+
+.center img {
+  width: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan Anda */
+  display: block;
+  margin: 0 auto; /* Untuk memastikan logo berada di tengah */
+}
+
+.judul {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #0D5C46;
+}
+
+.login-text {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 80px;
+  color: #0D5C46;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0D5C46;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #0D5C46;
+  padding: 8px;
+  width: 300px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  background-image: url(../Img/User.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 25px 25px;
+  padding-right: 30px;
+}
+
+input[type="password"] {
+  background-image: url(../Img/key.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 25px 25px;
+  padding-right: 30px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 170px;
+  background-color: #0D5C46;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+  .center img {
+    width: 30px; /* Sesuaikan ukuran logo untuk layar kecil */
+    margin-top: -12vh
+  }
+
+  .judul {
+    font-size: 3vw;
+  }
+
+  .login-text {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+  background-image: url(../Img/User.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  padding-right: 30px;
+}
+
+input[type="password"] {
+  background-image: url(../Img/key.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  padding-right: 30px;
+}
+
+  .button {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    /*    background-color: blueviolet;*/
+    display: flex;
+    /*    justify-content: left;*/
+    /*    align-items: center;*/
+    height: 100vh;
+    /*    margin-left: 80px;*/
+    /*    width: 120vh;*/
+    /*    margin-top: -50px;*/
+}
+
+.kotak {
+    border-radius: 12px;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;x
+}

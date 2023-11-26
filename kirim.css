@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.kotak-1,
+.kotak-2 {
+    border-radius: 3%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.kotak-1 {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-2 {
+    background-color: #141122;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #141122;
+}
+
+form {
+    width: 80%;
+}
+
+
+form input {
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    padding: 8px;
+    height: 28px;
+    width: 90%;
+    color: #141122;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #A896FF;
+    margin-right: 20px;
+    color: #fff;
+    border: none;
+    height: 43px;
+    width: 96%; 
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #141122;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .kotak-1,
+    .kotak-2 {
+        width: 80%;
+        height: 500px;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    .button1 .button {
+        border-radius: 8px;
+        border: 1px #141112 solid;
+        width: 70px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: #fff;
+    }
+
+
+    h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
