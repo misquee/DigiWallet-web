@@ -20,11 +20,11 @@ $result = mysqli_query($con, $query);
 
 if ($result) {
     // Data berhasil diperbarui
-    cho "<script>alert('Sandi berhasil di ubah.'); window.location.href='beranda.php';</script>";
+    cho "<script>alert('Sandi berhasil di ubah.'); window.location.href='index.php';</script>";
                 exit();
 } else {
     // Gagal memperbarui data
-    cho "<script>alert('Gagal Memperbarui data.'); window.location.href='beranda.php';</script>";
+    cho "<script>alert('Gagal Memperbarui data.'); window.location.href='index.php';</script>";
                 exit();
 }
 
