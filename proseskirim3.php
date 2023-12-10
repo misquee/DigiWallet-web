@@ -37,22 +37,22 @@ if ($result_pengirim->num_rows == 1 && $result_penerima->num_rows == 1) {
             
             if ($con->query($insert_query) === TRUE) {
                 // Transfer berhasil
-                echo "<script>alert('Transfer berhasil dilakukan.'); window.location.href='beranda.php';</script>";
+                echo "<script>alert('Transfer berhasil dilakukan.'); window.location.href='index.php';</script>";
                 exit();
             } else {
-                echo "<script>alert('Transaksi gagal.'); window.location.href='beranda.php';</script>";
+                echo "<script>alert('Transaksi gagal.'); window.location.href='index.php';</script>";
                 exit();
             }
         } else {
-            echo "<script>alert('Transaksi gagal.'); window.location.href='beranda.php';</script>";
+            echo "<script>alert('Transaksi gagal.'); window.location.href='index.php';</script>";
             exit();
         }
     } else {
-        echo "<script>alert('Password tidak valid.'); window.location.href='beranda.php';</script>";
+        echo "<script>alert('Password tidak valid.'); window.location.href='index.php';</script>";
         exit();
     }
 } else {
-    echo "<script>alert('Nomor penerima tidak ditemukan.'); window.location.href='beranda.php';</script>";
+    echo "<script>alert('Nomor penerima tidak ditemukan.'); window.location.href='index.php';</script>";
     exit();
 }
 
