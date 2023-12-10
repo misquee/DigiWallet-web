@@ -40,7 +40,7 @@ body {
     align-items: center;
 }
 
-h2 {
+.content1 h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #141122;
@@ -66,7 +66,7 @@ button {
     margin-top: 20px;
     background-color: #A896FF;
     margin-right: 20px;
-    color: #fff;
+    color: #000;
     border: none;
     height: 43px;
     width: 96%; 
@@ -75,7 +75,11 @@ button {
     cursor: pointer;
 }
 
-.popup {
+button:hover {
+    background-color: #3f325a;
+    color: #fff;
+}
+/*.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -111,7 +115,7 @@ button {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-}
+}*/
 
 
 @media only screen and (max-width: 600px) {

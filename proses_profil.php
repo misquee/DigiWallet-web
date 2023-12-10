@@ -20,10 +20,12 @@ $result = mysqli_query($con, $query);
 
 if ($result) {
     // Data berhasil diperbarui
-    header("Location: beranda.php"); // Redirect ke halaman profil
+    cho "<script>alert('Sandi berhasil di ubah.'); window.location.href='beranda.php';</script>";
+                exit();
 } else {
     // Gagal memperbarui data
-    echo "Gagal memperbarui data pengguna.";
+    cho "<script>alert('Gagal Memperbarui data.'); window.location.href='beranda.php';</script>";
+                exit();
 }
 
 // Tutup koneksi

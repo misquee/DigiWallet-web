@@ -6,7 +6,6 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
 }
 
 .kotak-1,
@@ -49,11 +48,11 @@ body {
     margin-right: 120px;
 }
 
-.user-details {
+.user-details1 {
     margin-left: 10px;
 }
 
-.logo-container {
+.logo-container1 {
     display: flex;
     align-items: center;
 }
@@ -63,12 +62,12 @@ body {
     height: 40px;
 }
 
-.user-details h2 {
+.user-details1 h2 {
     font-size: 12px;
     margin: 0;
 }
 
-.user-details p {
+.user-details1 p {
     font-size: 10px;
     margin: 0;
 }
@@ -86,13 +85,6 @@ body {
     background-color: #9e9e9e;
     height: 1px;
     width: 100%;
-}
-
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #141122;
 }
 
 .pengaturan {
@@ -141,6 +133,79 @@ h2 {
     text-decoration: none;
 }
 
+
+/*bagian dalam kotak-2*/
+
+/* Add the following styles to your existing CSS file */
+.transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+/*    margin-top: 20px;*/
+}
+
+.transaction-summary {
+    display: flex;
+    flex-direction: column;
+/*    align-items: center;*/
+    color: #fff;
+    margin-top: 90px;
+}
+
+.wallet-logo {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.total-info {
+    display: flex;
+    align-items: center;
+}
+
+.total-masuk,
+.total-keluar {
+    display: flex;
+    align-items: center;
+}
+
+.logomasuk,
+.logokeluar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.vertical-line {
+    height: 40px;
+    width: 1px;
+    background-color: #fff;
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.rp-amount {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.red-icon,
+.green-icon {
+    font-size: 45px;
+    padding-right: 5px; 
+}
+
+.red-icon {
+    color: red;
+}
+
+.green-icon {
+    color: green;
+}
 
 /* Media queries untuk membuat desain responsif */
 @media only screen and (max-width: 600px) {

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     loadContent('beranda2.php');
 });
 
+
+
 function loadContent(page) {
     // Gunakan AJAX untuk memuat konten baru di sebelah kanan
     var xhttp = new XMLHttpRequest();

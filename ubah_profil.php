@@ -26,8 +26,6 @@ if ($result) {
 
 } 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +34,7 @@ if ($result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengaturan Profil - DigiWallet</title>
-    <link rel="stylesheet" href="ubahprofil.css?version=7">
+    <link rel="stylesheet" href="style/ubahprofil.css?version=3">
 </head>
 <body>
     <div class="container">

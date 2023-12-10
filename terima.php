@@ -14,7 +14,7 @@ $qrCodePath = "qrcodes/" . $nohp . ".png";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code</title>
-     <link rel="stylesheet" type="text/css" href="terima.css?version=4">
+     <link rel="stylesheet" type="text/css" href="style/terima.css?version=3">
 </head>
 </head>
 <body>

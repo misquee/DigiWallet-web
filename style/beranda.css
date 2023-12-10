@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    /*    background-color: blueviolet;*/
+    display: flex;
+    /*    justify-content: left;*/
+    /*    align-items: center;*/
+    height: 100vh;
+    /*    margin-left: 80px;*/
+    /*    width: 120vh;*/
+    /*    margin-top: -50px;*/
+}
+
+.kotak-1,
+.kotak-2 {
+    border-radius: 3%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+
+.kotak-1 {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.logo1 {
+    margin-bottom: -10px;
+}
+
+.logo1 .logo2 {
+    height: 80px;
+}
+
+.saldo {
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.button1 {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.button1 .button {
+    border-radius: 8px;
+    border: 1px #141112 solid;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #fff;
+}
+
+.button1 .button:hover {
+    background-color: #141122;
+    color: #fff;
+}
+
+h2 {
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+.kotak-2 {
+    background-color: #141122;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    background: #141122;
+    flex-direction: column;
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+
+/*.kotak-2 hr {
+    width: 99%;
+    margin-bottom: 500px;
+}*/
+.transaction-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+} 
+
+.transaction-header {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff; /* Warna teks header */
+}
+
+.transaction-header a{
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #bbb;
+}
+
+.transaction-list {
+    border-top: 1px solid #555;
+    margin-top: 10px;
+    padding-top: 10px;
+    max-height: 400px; /* Maximal ukuran transaksi list */
+    overflow-y: auto;
+}
+
+.transaction-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #141122;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transaction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-amount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f9f9f9; /* Warna teks untuk jumlah transaksi */
+}
+
+/*.transaction-type {
+    color: #bbb; /* Warna teks untuk jenis transaksi */
+
+
+.transaction-time {
+    font-size: 14px;
+    display: flex;
+    color: #999; /* Warna teks untuk waktu transaksi */
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-clock {
+    font-size: 12px;
+    color: #999; /* Warna teks untuk jam, menit, detik */
+}
+
+.transaction-number { /* teks untuk nomor hp */
+    display: flex;
+    font-size: 12px;
+    color: #aaa; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-contact { /* teks untuk Penerima/pengirim  */
+    font-size: 14px;
+    color: #aaa; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .kotak-1,
+    .kotak-2 {
+        width: 80%;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    .button1 .button {
+        border-radius: 8px;
+        border: 1px #141112 solid;
+        width: 70px;
+        height: 40px;
+        margin-left: 10px;
+        background-color: #fff;
+    }
+
+    h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style3.css?v=2">
+	<link rel="stylesheet" href="style/style3.css?v=3">
 	<title>Register</title>
 </head>
 <body>

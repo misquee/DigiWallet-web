@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemindai Barcode</title>
-    <link rel="stylesheet" href="scan.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner</title>
 </head>
 <body>
-    <div id="reader-container">
-        <div id="interactive" class="viewport"></div>
-        <div id="barcode-data-popup" class="popup">
-            <span id="barcode-data"></span>
-            <label for="jumlahKirim">Jumlah Kirim:</label>
-            <input type="number" id="jumlahKirim" name="jumlahKirim" required>
-            <label for="password">Kata Sandi:</label>
-            <input type="password" id="password" name="password" required>
-            <button onclick="konfirmasiAksi()">Konfirmasi</button>
-        </div>
+
+<div id="qr-result"></div>
+<center><h1>Digi Scan</h1></center>
+<div style="display: flex; justify-content: center;">
+    <div id="qr-reader" style="width: 500px;">
+        
     </div>
-    <script src="quaggaJS/dist/quagga.js"></script>
-    <script src="scanner.js"></script>
+</div>
+
+
+<!-- library untuk scan -->
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script type="text/javascript">
+  function domReady(fn){
+    if (document.readyState === "complete" || document.readyState === "interactive"){
+        setTimeout(fn,1)
+    } else {
+        document.addEventListener("DOMContentLoaded",fn)
+    }
+
+  }
+
+  domReady(function() {
+      var myqr = document.getElementById('qr-result')
+      var lastResult,countResult = 0;
+
+      // jika menemukan qr code
+      function onScanSucces(decodeText,decodeResult){
+        if (decodeText !== lastResult) {
+            ++countResult;
+            lastResult = decodeText;
+
+            // allert qrcode
+            alert("You QR is : " + decodeText,decodeResult)
+
+            myqr.innerHTML = ' you scan ${countResult} : ${decodeText}'
+
+
+        }
+      }
+
+      // render kamera
+      var htmlscanner = new Html5QrcodeScanner(
+        "qr-reader",{fps:10,qrbox:250})
+
+      htmlscanner.render(onScanSucces)
+  })
+
+</script>
+
 </body>
 </html>

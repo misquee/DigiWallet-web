@@ -1,10 +1,9 @@
 <?php
-// Membuat koneksi ke database
-include('koneksi.php');
-
 // Mulai sesi
 session_start();
 
+// Membuat koneksi ke database
+include('koneksi.php');
 
 // Ambil nomor telepon dari sesi
 $nohp = $_SESSION['nohp'];
@@ -30,7 +29,7 @@ if ($result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiWallet</title>
-    <link rel="stylesheet" type="text/css" href="style5.css?version=3">
+    <link rel="stylesheet" type="text/css" href="style/style5.css?version=4">
 </head>
 <body>
     <div class="container">
@@ -54,13 +53,13 @@ if ($result) {
                 
             </div>
             <div class="icon-item">
-                <a href="#" onclick="loadContent('riwayat.php')" >
+                <a href="#" onclick="loadContent('riwayat.php')">
                     <img src="Img/riwayat.png" alt="History Icon" style="width: 35px; margin-left: -6px;">
                     <p>Riwayat</p>
                 </a>
             </div>
             <div class="icon-item">
-                <a href="#" id="scan-icon" onclick="loadContent('scan.php')">
+                <a href="scan2.php" onclick="loadContent('scan.php')">
                     <img src="Img/qr.png" alt="Scan Icon">
                     <p>Scan</p>
                 </a>
@@ -73,7 +72,7 @@ if ($result) {
             </div>
             <div class="icon-item">
                 <a href="login.php">
-                    <img src="Img/keluar.png" alt="Logout Icon" style="height: 23px; width: 17px; margin-top: 30px;">
+                    <img src="Img/keluar.png" alt="Logout Icon" style="height: 23px; width: 17px; margin-top: 95px;">
                 </a>
             </div>
         </div>
@@ -86,6 +85,6 @@ if ($result) {
     </div>
 </div>
 
-<script src="script.js?version=4"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

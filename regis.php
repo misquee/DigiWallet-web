@@ -22,8 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (mysqli_num_rows($result_check) > 0) {
                 echo '<script>alert("Nomor telepon sudah terdaftar. Silakan gunakan nomor telepon lain.");</script>';
             } else {
+                // Hash password sebelum menyimpan ke database
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
                 // Melakukan query SQL untuk memasukkan data ke dalam database
-                $query = "INSERT INTO user (no_hp, password) VALUES ('$nohp', '$password')";
+                $query = "INSERT INTO user (no_hp, password) VALUES ('$nohp', '$hashed_password')";
                 $result = mysqli_query($con, $query);
                 if ($result) {
                     // Generate a unique filename for the QR Code
@@ -32,10 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // Generate the QR Code
                     QRcode::png($nohp, $filename, QR_ECLEVEL_L, 10, 2);
 
+                    echo "<script>alert('pendaftaran berhasil, silahkan login.'); window.location.href='login.php';</script>";
+                exit();
 
-                    echo '<script>alert("Pendaftaran berhasil!");</script>';
-                    header("Location: login.php");
-                    exit();
                 } else {
                     echo '<script>alert("Terjadi kesalahan saat mendaftar. Silakan coba lagi.");</script>';
                 }

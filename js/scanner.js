@@ -29,6 +29,7 @@ Quagga.init({
 
 Quagga.onDetected(function(data) {
     var barcodeData = data.codeResult.code;
+    console.log("Barcode detected and processed:", data);
     document.getElementById("barcode-data").innerText = "Data Barcode: " + barcodeData;
     document.getElementById("barcode-data-popup").style.display = "block";
 });

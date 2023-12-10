@@ -31,7 +31,7 @@ if ($result) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>beranda2</title>
-	<link rel="stylesheet" type="text/css" href="beranda.css?version=2">
+	<link rel="stylesheet" type="text/css" href="style/beranda.css?version=5">
 </head>
 <body>
 	<div class="container" >
@@ -45,7 +45,7 @@ if ($result) {
 				</div>
 				<div class="saldo">
 						<h3>Rp <?php echo $saldo; ?></h3>
-					</div>
+				</div>
 				<div class="button1">
 					<a href="wbank/wlogin.php"><button class="button" >Isi Saldo</button></a>
 					<a href="#" onclick="loadKirim()"><button class="button">Kirim</button></a>
@@ -54,15 +54,13 @@ if ($result) {
 			</div>
 		</div>
 		<div class="kotak-2">
-			<!-- Konten dari kotak kedua -->
-			<hr>	
-			<hr>
-			<hr>
-			<hr>	
-			<hr>
-			<hr>
-			<hr>
-			<hr>
+			<div class="transaction-header-container">
+				<div class="transaction-header">Riwayat transaksi</div>
+				<div class="transaction-header"><a href="#">Lihat Semua</a></div>
+			</div>
+			<div class="transaction-list">
+		        <?php include('prosesriwayat.php'); ?>
+		    </div>
 		</div>
 	</div>
 

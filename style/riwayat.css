@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Warna latar belakang keseluruhan halaman */
+/*    color: #fff; /* Warna teks umum */*/
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.transaction-container {
+    border-radius: 12px;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    background: #141122;
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+
+.transaction-header {
+    font-size: 24px;
+    font-weight: bold;
+/*    margin-bottom: 20px;*/
+    padding: 10px;
+    padding-top: 15px;
+    color: #fff; /* Warna teks header */
+}
+
+.transaction-list {
+    border-top: 1px solid #555;
+    margin-top: 10px;
+    padding-top: 10px;
+    max-height: 400px; /* Maximal ukuran transaksi list */
+    overflow-y: auto;
+}
+
+.transaction-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #141122;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.transaction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9f9f9; /* Warna teks untuk jumlah transaksi */
+}
+
+/*.transaction-type {
+    color: #bbb; /* Warna teks untuk jenis transaksi */
+
+
+.transaction-time {
+    display: flex;
+    color: #999; /* Warna teks untuk waktu transaksi */
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-clock {
+    font-size: 14px;
+    color: #999; /* Warna teks untuk jam, menit, detik */
+}
+
+.transaction-number {
+    display: flex;
+    font-size: 14px;
+    color: #aaa; /* Warna teks untuk nomor penerima/pengirim */
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-contact {
+    font-size: 16px;
+    color: #aaa; /* Warna teks untuk tulisan penerima/pengirim dan nomor telepon */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .transaction-container {
+        padding: 10px;
+    }
+    .transaction-item {
+        padding: 10px;
+    }
+    .transaction-time {
+        text-align: center;
+    }
+    .transaction-number {
+        text-align: center;
+    }
+}

@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="login.css?version=2">
+  <link rel="stylesheet" href="style/login.css?version=4">
   <title>Log-In</title>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="login.js"></script>
+  <script src="js/login.js"></script>
 </head>
 <body>
   <div class="container">

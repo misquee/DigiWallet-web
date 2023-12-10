@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengaturan Keamanan - DigiWallet</title>
-    <link rel="stylesheet" href="pengaturankeamanan.css">
+    <link rel="stylesheet" href="style/pengaturankeamanan.css?version=4">
 </head>
 <body>
     <div class="container">
@@ -13,17 +13,17 @@
             <h2>Pengaturan Keamanan</h2>
             <div class="ganti-password">
                 <h3>Ganti Password</h3>
-                <form action="proses_ganti_password.php" method="POST">
-                    <label for="password-lama">Password Lama:</label>
-                    <input type="password" id="password-lama" name="password-lama" required>
+                <form action="proseskeamanan.php" method="post">
+                    <label for="old_password">Sandi Lama:</label>
+                    <input type="password" id="old_password" name="old_password" required>
 
-                    <label for="password-baru">Password Baru:</label>
-                    <input type="password" id="password-baru" name="password-baru" required>
+                    <label for="password">Sandi Baru:</label>
+                    <input type="password" id="password" name="password" required>
 
-                    <label for="konfirmasi-password">Konfirmasi Password Baru:</label>
-                    <input type="password" id="konfirmasi-password" name="konfirmasi-password" required>
+                    <label for="confirm_password">Konfirmasi Sandi Baru:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
 
-                    <button type="submit">Simpan Perubahan</button>
+                    <button type="submit" class="button">Ganti Sandi</button>
                 </form>
             </div>
         </div>

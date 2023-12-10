@@ -99,6 +99,12 @@ input[type="password"] {
   color: #fff;
   border-radius: 25px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Animasi transform selama 0.3 detik */
+}
+
+.button:hover {
+  background-color: #0A4738;
+  transform: scale(1.1); /* Tombol akan membesar 10% saat di-hover */
 }
 
 /* Media queries for responsive design */
