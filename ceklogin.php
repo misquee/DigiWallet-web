@@ -15,14 +15,15 @@ if ($result) {
     if (password_verify($password, $row['password'])) {
         // Password valid, simpan nomor hp dalam sesi
         $_SESSION['nohp'] = $nohp;
-        header("Location: beranda.php");
+       echo "<script>alert('Login berhasil'); window.location.href='index.php';</script>";
+                exit();
         exit();
     } else {
-        echo "<script>alert('Login gagal. password tidak valid'); window.location.href='login.php';</script>";
+        echo "<script>alert('Login gagal. username atau password salah'); window.location.href='login.php';</script>";
                 exit();
     }
 } else {
-    echo "<script>alert('Login gagal. password tidak valid'); window.location.href='login.php';</script>";
+    echo "<script>alert('Login gagal. username atau password salah'); window.location.href='login.php';</script>";
                 exit();
 }
 ?>
