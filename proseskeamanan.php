@@ -28,22 +28,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $result_update_password = mysqli_query($con, $query_update_password);
 
                 if ($result_update_password) {
-                    echo "<script>alert('Sandi berhasil di ubah.'); window.location.href='beranda.php';</script>";
+                    echo "<script>alert('Sandi berhasil di ubah.'); window.location.href='index.php';</script>";
                 exit();
                 } else {
-                    echo "<script>alert('Terjadi kesalahan saat mengubah sandi.'); window.location.href='beranda.php';</script>";
+                    echo "<script>alert('Terjadi kesalahan saat mengubah sandi.'); window.location.href='index.php';</script>";
                 exit();
                 }
             } else {
-                echo "<script>alert('Sandi baru dan konfirmasi sandi tidak cocok.'); window.location.href='beranda.php';</script>";
+                echo "<script>alert('Sandi baru dan konfirmasi sandi tidak cocok.'); window.location.href='index.php';</script>";
                 exit();
             }
         } else {
-            echo "<script>alert('Sandi lama tidak valid.'); window.location.href='beranda.php';</script>";
+            echo "<script>alert('Sandi lama tidak valid.'); window.location.href='index.php';</script>";
                 exit();
         }
     } else {
-        echo "<script>alert('Terjadi kesalahan saat mengubah sandi'); window.location.href='beranda.php';</script>";
+        echo "<script>alert('Terjadi kesalahan saat mengubah sandi'); window.location.href='index.php';</script>";
                 exit();
     }
 
